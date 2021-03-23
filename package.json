@@ -1,13 +1,12 @@
 {
     "name": "css-workshop",
     "version": "1.0.0",
-    "description": "",
+    "description": "This is a workshop for TAMS CSO 2021!",
     "main": "index.html",
     "scripts": {
-        "start": "serve",
-        "build": "echo This is a static template, there is no bundler or bundling involved!"
+        "start": "serve"
     },
-    "keywords": [],
+    "keywords": ["css", "html"],
     "author": "Michael Zhao",
     "license": "MIT",
     "devDependencies": {
