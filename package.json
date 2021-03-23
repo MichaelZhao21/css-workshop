@@ -4,7 +4,7 @@
     "description": "This is a workshop for TAMS CSO 2021!",
     "main": "index.html",
     "scripts": {
-        "start": "serve"
+        "start": "serve public"
     },
     "keywords": ["css", "html"],
     "author": "Michael Zhao",
