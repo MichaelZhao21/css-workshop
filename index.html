@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div class="title">
+        <div id="title">
             <h1>CSO CSS Tutorial</h1>
             <p>3/24/2021</p>
         </div>
@@ -34,6 +34,7 @@
                 <li class="concept-list-item">Chaining selectors</li>
                 <li class="concept-list-item">Flexbox</li>
                 <li class="concept-list-item">Grid</li>
+                <li class="concept-list-item">Animations</li>
             </ul>
         </div>
 
@@ -95,9 +96,23 @@
 
         <div class="container" id="display-v-position">
             <h2>Display vs. Position</h2>
-            <div class="absolute-div">Absolutely positioned!</div>
-            <div class="fixed-div">Fixed div</div>
+            <h3>Position</h3>
+            <div class="static-div">Statically positioned div</div>
+            <div class="fixed-div">Absolutely positioned div</div>
             <div class="relative-div">Relative positioned div</div>
+            <div class="absolute-div">Absolute positioned div</div>
+            <div class="sticky-div">Sticky positioned div</div>
+
+            <h3>Display</h3>
+            <div class="display-block">
+                <p class="block-text">Speaker 1: Hi!</p>
+                <p class="block-text">Speaker 2: Bye!</p>
+            </div>
+            <div class="display-inline">
+                <p class="inline-text">My name: </p>
+                <p class="inline-text">Michael!</p>
+            </div>
+            <div class="display-none">I will disappear if display is set to none :(</div>
         </div>
 
         <div class="container" id="chaining-selectors">
@@ -114,15 +129,32 @@
             </div>
         </div>
 
+        <h1>Advanced Features (to make your life easier!)</h1>
+
         <div class="container" id="flexbox-selectors">
             <h2>FLEXBOX</h2>
             <div class="menu">
-                <a class="menu-item" href="#display-v-position">Display vs. Position</a>
+                <a class="menu-item" href="#title">Title</a>
+                <a class="menu-item" href="#about">About</a>
+                <a class="menu-item" href="#concepts">Concepts</a>
+                <a class="menu-item" href="#html-basics">HTML Basics</a>
+                <a class="menu-item" href="#box-model">Box Model</a>
+                <a class="menu-item" href="#selectors">Selectors</a>
             </div>
         </div>
 
         <div class="container" id="grid-selectors">
             <h2>GRID</h2>
+            <div class="site-layout">
+                <div class="top"></div>
+                <div class="left"></div>
+                <div class="main-content"></div>
+            </div>
+        </div>
+
+        <div class="container" id="animations">
+            <h2>Animations!</h2>
+            <div class="box-to-animate"></div>
         </div>
 
         <script src="index.js"></script>
