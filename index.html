@@ -8,7 +8,11 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <h1>CSO CSS Tutorial</h1>
+        <div class="title">
+            <h1>CSO CSS Tutorial</h1>
+            <p>3/24/2021</p>
+        </div>
+        
         <div class="container" id="about">
             <p>
                 In this GA, we will learn how to use CSS to format boring HTML pages!
@@ -19,6 +23,7 @@
                 bunch of random properties lol
             </p>
         </div>
+        
         <div class="container" id="concepts">
             <h2>Concepts to talk about</h2>
             <ul class="concept-list">
@@ -39,6 +44,7 @@
                 <li class="concept-list-item">Grid</li>
             </ul>
         </div>
+        
         <div class="container" id="html-basics">
             <h2>HTML Basics</h2>
             <ul class="html-list">
@@ -55,6 +61,7 @@
                 <li class="html-list-item">Importing css and js</li>
             </ul>
         </div>
+        
         <div class="container" id="box-model">
             <h2>The Box Model</h2>
             <img
@@ -62,6 +69,7 @@
                 alt="box model image"
             />
         </div>
+        
         <div class="container" id="selectors">
             <h2>Basic CSS Selectors</h2>
             <div>I am only defined by the element</div>
@@ -71,9 +79,11 @@
                 I have an id, too!
             </div>
         </div>
+        
         <div class="container" id="chaining-selectors">
             <h2>Chaining Selectors</h2>
         </div>
+        
         <div class="container" id="css-units">
             <h2>CSS Units</h2>
             <div class="unit-box" id="px-box">px sized</div>
@@ -81,29 +91,45 @@
             <div class="unit-box" id="vw-box">vw sized</div>
             <div class="unit-box" id="%-box">% sized</div>
         </div>
-        <div class="container" id="divs-and-p">
+
+        <div class="container" id="divs-p-button">
             <h2>Attributes for Formatting div/p elements</h2>
             <div class="div-formatting">I'm a 'div' element!</div>
             <p class="p-formatting">I'm a 'p' element!</p>
+            <button class="button-formatting">I'm a 'button' element!</button>
             <a class="ext-font" href="https://fonts.google.com/specimen/Roboto?preview.text_type=custom#standard-styles">
                 Roboto Google Font here!
             </a>
         </div>
+
         <div class="container" id="display-v-position">
             <h2>Display vs. Position</h2>
             <div class="absolute-div">Absolutely positioned!</div>
             <div class="fixed-div">Fixed div</div>
             <div class="relative-div">Relative positioned div</div>
         </div>
+
         <div class="container" id="chaining-selectors">
             <h2>Chaining Selectors</h2>
+            <p>Selectors can be chained together when referencing children, siblings, and other ancestral hierarchies</p>
+            <div class="my-box">
+                <p>
+                    Using this, we can do things like format this paragraph without affecting the one above it!
+                </p>
+            </div>
         </div>
+
         <div class="container" id="flexbox-selectors">
             <h2>FLEXBOX</h2>
+            <div class="menu">
+                <a class="menu-item" href="#display-v-position">Display vs. Position</a>
+            </div>
         </div>
+
         <div class="container" id="grid-selectors">
             <h2>GRID</h2>
         </div>
+        
         <script src="index.js"></script>
     </body>
 </html>
