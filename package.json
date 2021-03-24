@@ -4,12 +4,17 @@
     "description": "This is a workshop for TAMS CSO 2021!",
     "main": "index.html",
     "scripts": {
-        "start": "serve public"
+        "start": "serve",
+        "dev": "browser-sync start --server --files ."
     },
-    "keywords": ["css", "html"],
+    "keywords": [
+        "css",
+        "html"
+    ],
     "author": "Michael Zhao",
     "license": "MIT",
     "devDependencies": {
+        "browser-sync": "^2.26.14",
         "serve": "^11.2.0"
     }
 }
