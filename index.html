@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon" />
         <link rel="stylesheet" href="index.css" />
-        <title>CSO CSS Tutorial!</title>
+        <title>CSO CSS Tutorial (very cool)!</title>
     </head>
     <body>
         <div id="title">
@@ -55,7 +55,7 @@
         </div>
 
         <div class="container" id="box-model">
-            <h2>The Box Model</h2>
+            <h2 id="box-model-title">The Box Model</h2>
             <img
                 src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png"
                 alt="box model image"
@@ -64,10 +64,10 @@
 
         <div class="container" id="selectors">
             <h2>Basic CSS Selectors</h2>
-            <div>I am only defined by the element</div>
-            <div class="important-div">I am defined by class!</div>
-            <div class="important-div">I am the same as the div above</div>
-            <div class="important-div" id="selector-one">I have an id, too!</div>
+            <p>I am only defined by the element</p>
+            <p class="important-div">I am defined by class!</p>
+            <p class="important-div">I am the same as the div above</p>
+            <p class="important-div" id="selected-one">I have an id, too!</p>
         </div>
 
         <div class="container" id="chaining-selectors">
@@ -76,10 +76,18 @@
                 Selectors can be chained together when referencing children, siblings, and other
                 ancestral hierarchies
             </p>
-            <div class="my-box">
+            <div id="my-box">
                 <p>
                     Using this, we can do things like format this paragraph without affecting the
                     one above it!
+                </p>
+            </div>
+            <p class="dog">Only dog</p>
+            <p class="dog cat">Both dog and cat</p>
+            <p class="cat">Only cat</p>
+            <div id="your-box">
+                <p>
+                    This won't be formatted
                 </p>
             </div>
         </div>
@@ -96,7 +104,7 @@
             <h2>Attributes for Formatting div/p elements</h2>
             <div class="div-formatting">I'm a 'div' element!</div>
             <p class="p-formatting">I'm a 'p' element!</p>
-            <button class="button-formatting">I'm a 'button' element!</button>
+            <button class="button-formatting" onclick="alert('hi')">I'm a 'button' element!</button>
             <a
                 class="ext-font"
                 href="https://fonts.google.com/specimen/Roboto?preview.text_type=custom#standard-styles"
@@ -109,7 +117,8 @@
             <h2>Display vs. Position</h2>
             <h3>Position</h3>
             <div class="static-div">Statically positioned div</div>
-            <div class="fixed-div">Absolutely positioned div</div>
+            <div class="fixed-div-2">hi</div>
+            <div class="fixed-div">Fixed positioned div</div>
             <div class="relative-div">Relative positioned div</div>
             <div class="absolute-div">Absolute positioned div</div>
             <div class="sticky-div">Sticky positioned div</div>
@@ -121,9 +130,10 @@
             </div>
             <div class="display-inline">
                 <p class="inline-text">My name:</p>
-                <p class="inline-text">Michael!</p>
+                <p class="inline-text">Michael! <a href="michaelzhao.xyz">(website)</a></p>
             </div>
             <div class="display-none">I will disappear if display is set to none :(</div>
+            <div>hi</div>
         </div>
 
         <h1>Advanced Features (to make your life easier!)</h1>
@@ -132,7 +142,7 @@
             <h2>FLEXBOX</h2>
             <div class="menu">
                 <a class="menu-item" href="#title">Title</a>
-                <a class="menu-item" href="#about">About</a>
+                <a class="menu-item" href="#about" id="about">About</a>
                 <a class="menu-item" href="#concepts">Concepts</a>
                 <a class="menu-item" href="#html-basics">HTML Basics</a>
                 <a class="menu-item" href="#box-model">Box Model</a>
@@ -143,7 +153,7 @@
         <div class="container" id="grid-selectors">
             <h2>GRID</h2>
             <div class="site-layout">
-                <div class="top"></div>
+                <div class="header"></div>
                 <div class="left"></div>
                 <div class="main-content"></div>
             </div>
@@ -168,6 +178,12 @@
                 href="https://stackoverflow.com/questions/19461521/how-to-center-an-element-horizontally-and-vertically"
             >
                 STACKOVERFLOW
+            </a>
+            <a
+                class="ext-link"
+                href="https://codesandbox.io/s/css-workshop-mp10b?file=/index.html"
+            >
+                Codesandbox
             </a>
         </div>
 
