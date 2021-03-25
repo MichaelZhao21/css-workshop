@@ -89,7 +89,7 @@ p {
     background-color: #aaa;
     color: #fff;
     text-align: right;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 2rem;
 }
@@ -98,7 +98,7 @@ p {
     margin: 0 20px;
     width: 200px;
     height: 100px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
 
@@ -237,5 +237,26 @@ p {
     }
     to {
         width: 500px;
+    }
+}
+
+.duck-img {
+    width: 200px;
+    margin: 20px;
+    animation-name: duck-spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes duck-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
